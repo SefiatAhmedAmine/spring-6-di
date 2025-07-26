@@ -7,7 +7,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles("FR")
+//@ActiveProfiles("FR")
 @SpringBootTest
 class Myi18nControllerTestFR {
 
