@@ -1,4 +1,4 @@
-package guru.springframework.spring6di.controllers.i18n;
+package guru.springframework.spring6di.controllers.datasource;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,15 +7,15 @@ import org.springframework.test.context.ActiveProfiles;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ActiveProfiles({"EN", "dev"})
+@ActiveProfiles({"uat", "EN"})
 @SpringBootTest
-class Myi18nControllerTestEN {
+class MyDataSourceControllerTest {
 
     @Autowired
-    Myi18nController myi18nController;
+    private MyDataSourceController myDataSourceController;
 
     @Test
-    void sayHello() {
-        System.out.println(myi18nController.sayHello());
+    void getDataSource() {
+        System.out.println(myDataSourceController.getDataSource());
     }
 }
